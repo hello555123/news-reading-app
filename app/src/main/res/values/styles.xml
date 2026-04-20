@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MyBaseButtonStyle" parent="@style/Widget.Material3.Button">
+        <item name="android:backgroundTint">@color/colorPrimary</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="MyBaseTextViewStyle" parent="@style/TextAppearance.Material3.LabelLarge">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+<!--    -->
+    <!-- Style for title TextView-->
+    <style name="TitleTextViewStyle" >
+        <item name="android:paddingBottom">@dimen/padding_bottom_4</item>
+        <item name="android:paddingTop">@dimen/padding</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:paddingLeft">@dimen/padding</item>
+        <item name="android:paddingRight">@dimen/padding</item>
+        <item name="android:textAppearance">@style/TextAppearance.Material3.BodyLarge</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/sp22 </item>
+    </style>
+
+    <!-- Style for Section, Author, and Date TextView -->
+    <style name="SectionAuthorDateStyle">
+        <item name="android:layout_marginLeft">@dimen/layout_margin</item>
+        <item name="android:layout_marginRight">@dimen/layout_margin</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <!-- Style for buttons on the Home page-->
+    <style name="HomeButtonStyle" parent="@style/SectionAuthorDateStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:backgroundTint">@color/color_app_bar_text</item>
+        <item name="android:textSize">36sp </item>
+    </style>
+
+    <!-- Style for section TextView -->
+    <style name="SectionTextViewStyle" parent="@style/SectionAuthorDateStyle">
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">@color/color_section</item>
+        <item name="android:textSize">@dimen/sp18 </item>
+    </style>
+
+    <!-- Style for title of a page -->
+    <style name="PageTitleStyle" parent="@style/TitleTextViewStyle">
+        <item name="android:background">@color/color_tab_text</item>
+        <item name="android:textColor">@color/color_app_bar_text</item>
+    </style>
+
+    <!-- Style for trailText TextView -->
+    <style name="TrailTextViewStyle">
+        <item name="android:layout_marginBottom">@dimen/layout_margin_8</item>
+        <item name="android:layout_marginLeft">@dimen/layout_margin</item>
+        <item name="android:layout_marginRight">@dimen/layout_margin</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:maxLines">8</item>
+        <item name="android:textColor">@color/color_trail_text</item>
+        <item name="android:textSize">@dimen/sp16 </item>
+    </style>
+
+    <!-- Style for Author TextView -->
+    <style name="AuthorTextViewStyle" parent="@style/SectionAuthorDateStyle">
+        <item name="android:textColor">@color/color_author</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">@dimen/sp16 </item>
+    </style>
+
+    <!-- Style for Date TextView -->
+    <style name="DateTextViewStyle" parent="@style/SectionAuthorDateStyle">
+        <item name="android:textColor">@color/color_date_text</item>
+    </style>
+
+    <!-- Style for news list button-->
+    <style name="NewsListButtonStyle" parent="@style/SectionAuthorDateStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/sp16</item>
+    </style>
+
+    <style name="AllButton" parent="TextAppearance.AppCompat.Button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/large_margin</item>
+        <item name="android:layout_marginTop">@dimen/large_margin</item>
+        <item name="android:layout_marginEnd">@dimen/large_margin</item>
+        <item name="android:layout_marginBottom">@dimen/large_margin</item>
+        <item name="android:backgroundTint">@color/color_tab_text</item>
+        <item name="android:textSize">20sp</item>
+
+    </style>
+
+    <style name="TitleText"  parent="TextAppearance.AppCompat.Title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/large_margin</item>
+        <item name="android:layout_marginTop">@dimen/large_margin</item>
+        <item name="android:layout_marginEnd">@dimen/large_margin</item>
+        <item name="android:layout_marginBottom">@dimen/large_margin</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="ItemText" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/small_margin</item>
+        <item name="android:layout_marginTop">@dimen/small_margin</item>
+        <item name="android:layout_marginEnd">@dimen/small_margin</item>
+        <item name="android:layout_marginBottom">@dimen/small_margin</item>
+        <item name="android:textSize">18sp</item>
+
+    </style>
+
+    <style name="ItemEditText">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/small_margin</item>
+        <item name="android:layout_marginTop">@dimen/small_margin</item>
+        <item name="android:layout_marginEnd">@dimen/small_margin</item>
+        <item name="android:layout_marginBottom">@dimen/small_margin</item>
+
+    </style>
+</resources>

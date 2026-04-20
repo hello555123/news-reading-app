@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".news.WriteCommentActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/new_navigation"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:title="@string/app_name"
+        app:titleTextColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/txv_writecomment_title"
+        style="@style/PageTitleStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/page_title_comment"
+        android:textSize="@dimen/sp24"
+        app:layout_constraintBottom_toTopOf="@+id/new_navigation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_write_comment"
+        style="@style/TrailTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/layout_margin_small"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="@dimen/layout_margin_small"
+        android:ems="10"
+        android:hint="@string/hint_comment"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txv_comment_news_title" />
+
+    <Button
+        android:id="@+id/btn_submit_comment"
+        style="@style/NewsListButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_small"
+        android:onClick="returnComment"
+        android:text="@string/btn_submit_comment"
+        app:layout_constraintEnd_toEndOf="@+id/edt_write_comment"
+        app:layout_constraintTop_toBottomOf="@+id/edt_write_comment" />
+
+    <TextView
+        android:id="@+id/txv_comment_news_title"
+        style="@style/TitleTextViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/layout_margin_small"
+        android:layout_marginTop="@dimen/layout_margin_large"
+        android:layout_marginEnd="@dimen/layout_margin_small"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txv_writecomment_title" />
+</androidx.constraintlayout.widget.ConstraintLayout>

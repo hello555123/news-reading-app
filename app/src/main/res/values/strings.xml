@@ -1,0 +1,59 @@
+<resources>
+    <!--    主界面-->
+
+    <!--    登录-->
+    <string name="login_name">name:</string>
+    <string name="login_pwd">password:</string>
+    <string name="login_name_txt">24080703016梁家乐</string>
+    <string name="login_pwd_txt"> Please enter the password</string>
+    <string name="login_btn">login</string>
+    <string name="login_reg_btn">register</string>
+
+    <!--    注册界面-->
+    <string name="reg_name">Username</string>
+    <string name="reg_pwd">password</string>
+    <string name="reg_confirm_pwd">confirmPwd</string>
+    <string name="reg_phone_number">phone</string>
+    <string name="verification_code">Code</string>
+    <string name="send_code">code</string>
+    <string name="reg_title">register</string>
+    <string name="reg_reg_btn">register</string>
+    <string name="reg_name_txt">Capital letter followed by 6-12 letter</string>
+    <string name="reg_pwd_txt">6-20 letters/numbers</string>
+    <string name="reg_confirm_pwd_txt">Password again</string>
+    <string name="reg_phone_number_txt">Valid phone number</string>
+    <string name="verification_code_txt">4 digits</string>
+    <string name="remember">remember</string>
+
+    <string name="user_setting_title">User Setting</string>
+    <string name="gender_label">Gender</string>
+    <string name="gender_op_male">male</string>
+    <string name="gender_op_female">female</string>
+    <string name="job_label">Job</string>
+    <string name="hobby_label">Hobby</string>
+    <string name="hobby_op1">Anime</string>
+    <string name="hobby_op2">Esports</string>
+    <string name="hobby_op3">Running</string>
+    <string name="Save_button">Save</string>
+    <string name="Username_label">Username:</string>
+
+    <!--    用户设置界面-->
+    <string-array name="spinner_items">
+        <item>student</item>
+        <item>programmer</item>
+        <item>teacher</item>
+    </string-array>
+
+    <string name="app_name">新闻阅览器</string>
+    <string name="btn_selected">精选新闻</string>
+    <string name="btn_it">科技动态</string>
+    <string name="btn_npc">两会典读</string>
+
+    <string name="btn_comment">评论</string>
+    <string name="hint_comment">请留下您的评论</string>
+    <string name="btn_submit_comment">提交</string>
+    <string name="default_comment">还没有任何评论</string>
+
+    <string name="page_title_section">新闻板块</string>
+    <string name="page_title_comment">发表评论</string>
+</resources>

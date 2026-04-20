@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="login_name">姓名:</string>
+    <string name="login_pwd">密码:</string>
+    <string name="login_name_txt">24080703016梁家乐</string>
+    <string name="login_pwd_txt">请输入密码</string>
+    <string name="login_btn">登录</string>
+    <string name="login_reg_btn">注册</string>
+
+    <string name="reg_name">用户名:</string>
+    <string name="reg_pwd">密码</string>
+    <string name="reg_confirm_pwd">确认密码</string>
+    <string name="reg_phone_number">手机号码</string>
+    <string name="verification_code">验证码</string>
+    <string name="send_code">发送验证码</string>
+    <string name="reg_title">用户注册</string>
+    <string name="reg_reg_btn">注册</string>
+    <string name="reg_name_txt">大写字母开头，6-12个字母数字</string>
+    <string name="reg_pwd_txt">6-20个字母数字</string>
+    <string name="reg_confirm_pwd_txt">重复输入密码</string>
+    <string name="reg_phone_number_txt">合法的手机号码</string>
+    <string name="verification_code_txt">4位数字</string>
+    <string name="remember">记住密码</string>
+
+    <string name="user_setting_title">用户设置</string>
+    <string name="gender_label">性别</string>
+    <string name="gender_op_male">男</string>
+    <string name="gender_op_female">女</string>
+    <string name="job_label">职业</string>
+    <string name="hobby_label">爱好</string>
+    <string name="hobby_op1">看番</string>
+    <string name="hobby_op2">电竞</string>
+    <string name="hobby_op3">跑步</string>
+    <string name="Save_button">保存设置</string>
+    <string name="Username_label">Username:</string>
+    <!--    用户设置界面-->
+    <string-array name="spinner_items">
+        <item>学生</item>
+        <item>程序员</item>
+        <item>老师</item>
+    </string-array>
+
+    <string name="app_name">新闻阅览器</string>
+    <string name="btn_selected">精选新闻</string>
+    <string name="btn_it">科技动态</string>
+    <string name="btn_npc">两会典读</string>
+
+    <string name="btn_comment">评论</string>
+    <string name="hint_comment">请留下您的评论</string>
+    <string name="btn_submit_comment">提交</string>
+    <string name="default_comment">还没有任何评论</string>
+
+    <string name="page_title_section">新闻板块</string>
+    <string name="page_title_comment">发表评论</string>
+</resources>

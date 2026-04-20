@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".news.NewsListActivity">
+
+    <!-- 添加 Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/new_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:title="@string/app_name"
+        app:titleTextColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/txv_lianghuilist_title"
+        style="@style/PageTitleStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="@string/page_title_section"
+        android:text="@string/btn_npc"
+        android:textSize="@dimen/sp24" />
+    <!--    第一条新闻-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/layout_margin"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txv_lianghui_title"
+            style="@style/TitleTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="title" />
+
+        <TextView
+            android:id="@+id/txv_lianghui_trail_text"
+            style="@style/TrailTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="trailText" />
+
+        <TextView
+            android:id="@+id/txv_lianghui_comment"
+            style="@style/AuthorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/default_comment"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btn_lianghui_comment"
+            style="@style/NewsListButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="launchWriteCommentActivity"
+            android:text="@string/btn_comment"
+            tools:ignore="OnClick" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider" />
+    </LinearLayout>
+
+    <!--    第二条新闻-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/layout_margin"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txv_lianghui_title1"
+            style="@style/TitleTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="title" />
+
+        <TextView
+            android:id="@+id/txv_lianghui_trail_text1"
+            style="@style/TrailTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="trailText" />
+
+        <TextView
+            android:id="@+id/txv_lianghui_comment1"
+            style="@style/AuthorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/default_comment"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btn_lianghui_comment1"
+            style="@style/NewsListButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="launchWriteCommentActivity"
+            android:text="@string/btn_comment"
+            tools:ignore="OnClick"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider"/>
+    </LinearLayout>
+
+</LinearLayout>
